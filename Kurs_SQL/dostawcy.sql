@@ -4,3 +4,5 @@ create table dostawcy (
 	kod_rodzaju_srodka_transportu varchar(10),
 	status_aktywnosci varchar(1)
 );
+
+select * from dostawcy;
