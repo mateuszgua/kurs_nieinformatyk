@@ -54,3 +54,20 @@ from (
 	order by data_urodzenia
 ) as lista
 limit 5;
+
+/* zapytanie 4 */
+select stawka_podatku 
+from produkty
+where nazwa_produktu = 'chleb';
+
+select *
+from produkty 
+where stawka_podatku = 23;
+
+select *
+from produkty 
+where stawka_podatku = (
+	select stawka_podatku 
+	from produkty
+	where nazwa_produktu = 'chleb'
+) and nazwa_produktu not in ('chleb');
