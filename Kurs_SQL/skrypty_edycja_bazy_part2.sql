@@ -13,3 +13,7 @@ select * from klienci;
 select * from faktury_sprzedazy;
 
 select * from zakupy;
+
+select * from zakupy_pozycje;
+
+select * from jednostki_produktow;
